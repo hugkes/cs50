@@ -1,0 +1,23 @@
+sort1 uses: Bubble
+
+How do you know?: When random and reversed, bubble is the slowest.
+However, when sorted, bubble is the quickest as it can quit early.
+sort 1:    0m0.473s/0m0.391s/0m0.434s 3
+sort 2:    0m0.023s/0m0.087s/0m0.068s 1
+sort 3:    0m0.293s/0m0.168s/0m0.348s 2
+
+sort2 uses: Merged
+
+How do you know?: Running time is the quickest for reversed and random.
+random 50000
+sort 1:    0m17.603s/0m23.245s/0m18.921s 3
+sort 2:    0m3.681s/0m5.539s/0m5.157s 1
+sort 3:    0m9.564s/0m9.835s/0m9.899s 2
+
+sort3 uses: Selection
+
+How do you know?: Running time is consistently second. Does not quit early in sorted.
+sorted 10000
+sort 1:    0m0.027s/0m2.398s/0m0.023s 1
+sort 2:    0m0.032s/0m0.100s/0m0.026s 1
+sort 3:    0m0.238s/0m0.222s/0m0.166s 2
